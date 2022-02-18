@@ -10,7 +10,7 @@ public class DrumTest {
 
     @Before
     public void before(){
-        drum = new Drum("Kick Drum","Red", "808Neutron", 4,2);
+        drum = new Drum("Kick Drum","Red", "808Neutron", 4,2, 2000);
     }
 
     @Test
@@ -36,6 +36,10 @@ public class DrumTest {
     @Test
     public void canPlaySound(){
         assertEquals("Cling Clang", drum.play());
+    }
+    @Test
+    public void hasPrice(){
+        assertEquals(2000, drum.getPrice(),0.01);
     }
 
 
