@@ -11,4 +11,9 @@ public class Piano extends Instruments{
     public int getNumOfKeys() {
         return numOfKeys;
     }
+
+    @Override
+    public String play() {
+        return null;
+    }
 }

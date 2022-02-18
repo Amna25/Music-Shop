@@ -17,4 +17,9 @@ public class Guitar extends Instruments{
     public int getToneKnobs() {
         return toneKnobs;
     }
+
+    @Override
+    public String play() {
+        return null;
+    }
 }
