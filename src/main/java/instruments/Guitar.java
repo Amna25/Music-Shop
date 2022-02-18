@@ -20,6 +20,6 @@ public class Guitar extends Instruments{
 
     @Override
     public String play() {
-        return null;
+        return "a-woogah woogah";
     }
 }
