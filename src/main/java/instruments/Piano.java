@@ -14,6 +14,6 @@ public class Piano extends Instruments{
 
     @Override
     public String play() {
-        return null;
+        return "tone tone na na na";
     }
 }
