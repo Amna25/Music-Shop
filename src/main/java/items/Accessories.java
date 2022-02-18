@@ -2,19 +2,24 @@ package items;
 
 import behaviours.ISell;
 
-public class Accessories implements ISell {
-    private String item;
+public abstract class Accessories implements ISell {
+    private String type;
+    private String description;
     private double sellingPrice;
     private double buyingPrice;
 
-    public Accessories(String item, double sellingPrice, double buyingPrice) {
-        this.item = item;
+    public Accessories(String type,String description, double sellingPrice, double buyingPrice) {
+        this.type = type;
+        this.description = description;
         this.sellingPrice = sellingPrice;
         this.buyingPrice = buyingPrice;
     }
 
-    public String getItem() {
-        return item;
+    public String getType() {
+        return type;
+    }
+    public String getDescription(){
+        return description;
     }
 
     public double getSellingPrice() {
