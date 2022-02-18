@@ -3,7 +3,7 @@ package instruments;
 public class Piano extends Instruments{
     private int numOfKeys;
 
-    public Piano( String style, String colour, String type,double price, int numOfKeys) {
+    public Piano( String style, String colour, String type, int numOfKeys, double price) {
         super( style, colour, type, price);
         this.numOfKeys = numOfKeys;
     }
@@ -15,5 +15,10 @@ public class Piano extends Instruments{
     @Override
     public String play() {
         return "tone tone na na na";
+    }
+
+    @Override
+    public double calculateMarkup() {
+        return getPrice();
     }
 }
