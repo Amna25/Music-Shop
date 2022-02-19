@@ -15,6 +15,8 @@ public abstract class Accessories implements ISell {
         this.buyingPrice = buyingPrice;
     }
 
+
+
     public String getType() {
         return type;
     }
@@ -32,6 +34,6 @@ public abstract class Accessories implements ISell {
 
     @Override
     public double calculateMarkup() {
-        return sellingPrice;
+        return sellingPrice - buyingPrice;
     }
 }

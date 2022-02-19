@@ -4,8 +4,8 @@ public class Drum extends Instruments{
     private int numOfDrums;
     private int numOfSticks;
 
-    public Drum( String style, String colour, String type, int numOfDrums, int numOfSticks,double price) {
-        super( style, colour, type, price);
+    public Drum( String style, String colour,String type,String description, double sellingPrice, double buyingPrice, int numOfDrums, int numOfSticks) {
+        super(type, description,sellingPrice,buyingPrice, style, colour);
         this.numOfDrums = numOfDrums;
         this.numOfSticks = numOfSticks;
     }
@@ -23,8 +23,5 @@ public class Drum extends Instruments{
         return "Cling Clang";
     }
 
-    @Override
-    public double calculateMarkup() {
-        return getPrice();
-    }
+
 }

@@ -2,19 +2,19 @@ package instruments;
 
 import behaviours.IPlay;
 import behaviours.ISell;
+import items.Accessories;
 
-public abstract class Instruments implements IPlay, ISell {
+public abstract class Instruments extends Accessories implements IPlay {
 
     private String style;
     private String colour;
-    private String type;
-    private double price;
 
-    public Instruments( String style, String colour, String type, double price) {
+
+    public Instruments( String type,String description, double sellingPrice, double buyingPrice, String style, String colour) {
+        super(type,description,sellingPrice,buyingPrice);
         this.style = style;
         this.colour = colour;
-        this.type = type;
-        this.price = price;
+
     }
 
 
@@ -26,11 +26,5 @@ public abstract class Instruments implements IPlay, ISell {
         return colour;
     }
 
-    public String getType() {
-        return type;
-    }
 
-    public double getPrice(){
-        return price;
-    }
 }

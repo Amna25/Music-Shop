@@ -33,6 +33,6 @@ public class TrumpetAccessoriesTest {
     }
     @Test
     public void canCalculateMarkup(){
-        assertEquals(300, accessories.calculateMarkup(), 0.01);
+        assertEquals(150, accessories.calculateMarkup(), 0.01);
     }
 }

@@ -32,6 +32,6 @@ public class guitarAccessoriesTest {
     }
     @Test
     public void canCalculateMarkup(){
-        assertEquals(200, item.calculateMarkup(), 0.01);
+        assertEquals(100, item.calculateMarkup(), 0.01);
     }
 }
